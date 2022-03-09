@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato:ital@1&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0px;
+    overflow-x: hidden;
+   
+    background-color: #F3F6FB;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 5px;
+
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom: black;
+}
+
+.header .logo {
+    width: 250px;
+    margin-right: 5ch;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 30px;
+}
+
+.header input{
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 5ch;
+    border: none;
+    outline: none;
+    background-color: #F3F6FB;
+}
+
+.header .buttons {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.header .buttons button {
+    width: 120px;
+    height: 30px;
+    outline: inherit;
+    border: none;
+    font-weight: bold;
+}
+
+.header .buttons .login {
+    background-color: #0095f6;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.header .buttons .register {
+    color: #0095f6;
+}
+
+/*-----------------------------------*/
+
+.content {
+    width: 80%;
+}
+
+/*-----------------------------------*/
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    align-self: center;
+    justify-content: center;
+}
+
+.profile .img {
+    display: flex;
+    width: 250px;
+    margin-right: 5ch;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .img img {
+    border-radius: 50%;
+}
+
+.info {
+    width: 55%;
+}
+
+.info div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info div button {
+    height: 30px;
+    outline: inherit;
+    border: none;
+    background-color: #0095f6;
+    color: #fff;
+}
+
+.info div a,h2 {
+    margin: 10px;
+    font-weight: 300;
+}
+
+.profile .link {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/*-----------------------------------*/
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.categorias a {
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*-----------------------------------*/
+
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding: 10px;
+}
+
+.posts img {
+    width: 250px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 600px) {
+
+    .header .logo {
+        width: 125px;
+        margin-right: 10px;
+    }
+
+
+    .header input {
+        display: none;
+    }
+
+    /*-----------------------------------*/
+
+    .content {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /*-----------------------------------*/
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    .info .profile_name {
+        justify-content: center;
+    }
+
+    
+    .info .estatisticas a {
+        font-weight: bold;
+    }
+
+    .info .descricao {
+        display: none;
+    }
+
+    .info .link {
+        display: none;
+    }
+
+    .categorias {
+        display: none;
+    }
+
+    .posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .posts img {
+        width: 120px;
+    }
+}
